@@ -1,0 +1,16 @@
+{
+	"bold_folder_labels": false,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"font_face": "Envy Code R",
+	"font_size": 10,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"scroll_speed": 2.0,
+	"vintage_start_in_command_mode": true,
+	"vintageex_linux_shell": "bash",
+	"vintageex_linux_terminal": "terminator"
+}

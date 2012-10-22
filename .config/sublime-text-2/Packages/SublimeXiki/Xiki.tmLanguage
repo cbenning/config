@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>xiki</array>
+	<key>name</key>
+	<string>Xiki</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*)(\${1,2}).+$</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.shell</string>
+				</dict>
+			</dict>
+			<key>contentName</key>
+			<string>comment.xiki.command.output</string>
+			<key>end</key>
+			<string>^(?!\1  )</string>
+			<key>name</key>
+			<string>meta.xiki.command</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s*@</string>
+			<key>name</key>
+			<string>keyword.operator.base</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s*[+\-]</string>
+			<key>name</key>
+			<string>keyword.operator.expand</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\s*(\\)(?=[\\$+\-])</string>
+			<key>name</key>
+			<string>comment.operator.path.escape</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>xiki</string>
+	<key>uuid</key>
+	<string>AF8D3707-011E-11E2-9804-705681C14B6F</string>
+</dict>
+</plist>

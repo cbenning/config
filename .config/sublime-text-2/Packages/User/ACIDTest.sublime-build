@@ -1,0 +1,5 @@
+{
+	"cmd": ["mvn","scala:compile"],
+	"working_dir": "/home/chris/nfs_mounts/broker_workspace/sidtest_dev/agents"
+
+}
